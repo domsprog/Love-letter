@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,600&family=Caveat:wght@500;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="ambient"></div>
+
+<div class="stage">
+
+  <!-- SCENE 1: ENVELOPE -->
+  <section class="scene active" id="scene-envelope">
+    <div class="envelope-wrap">
+      <div class="prompt">tap to open</div>
+      <div class="envelope" id="envelope">
+        <div class="env-back"></div>
+        <div class="env-letter-peek"></div>
+        <div class="env-flap"></div>
+        <div class="seal">
+          <svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.7-10-9.3C.4 8.6 2 5 5.6 5c2 0 3.4 1 4.4 2.4C11 6 12.4 5 14.4 5 18 5 19.6 8.6 22 11.7 19.5 16.3 12 21 12 21z"/></svg>
+        </div>
+      </div>
+      <div class="env-hint">a little something for you</div>
+    </div>
+  </section>
+
+  <!-- SCENE 2: LETTER -->
+  <section class="scene" id="scene-letter">
+    <div class="book" id="book"></div>
+    <div class="nav-row">
+      <button class="nav-btn" id="prevBtn">← back</button>
+      <div class="dots" id="dots"></div>
+      <button class="nav-btn" id="nextBtn">next →</button>
+    </div>
+  </section>
+
+  <!-- SCENE 3: FINALE -->
+  <section class="scene" id="scene-final">
+    <div class="finale">
+      <div class="heart-burst">💗</div>
+      <h2>Always Yours</h2>
+      <p>Thank you for reading this all the way to the end.</p>
+      <button class="replay" id="replayBtn">read it again</button>
+    </div>
+  </section>
+
+</div>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
